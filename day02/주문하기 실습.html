@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            width: 500px;
+            border: 1px solid black;
+            padding: 5px;
+            margin: 0 auto;
+        }
+
+        .img{
+             width: 100%; 
+             height: 500px;
+            
+            margin: 0 auto;
+            background-color: red;
+            background-image: url(https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTA1MTFfMjI0%2FMDAxNzQ2OTcyODgzNjAx.tB3cJ3raYSF_e-Z6NwZOrCIP3NEIPTMt7tCH12HVxoAg.CzVQk5gTw9uOsAsr-86IK_G3AvKy_ich6HBQG9uazZAg.JPEG%2FKakaoTalk_20250511_230933965_04.jpg&type=a340);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .info{
+           /* border: 1px solid black; */
+            width: 50%;
+            margin:0 auto;
+         
+        }
+ 
+        /* 주문정보 css */
+
+        .order.wrap{
+            border: 1px solid black;
+            width: 85%;
+            margin:0 auto;
+
+            margin-top: 20px;
+
+        }
+
+        .order.wrap input{
+            width: 100%; 
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .order.wrap select{
+            width: 100%; 
+            padding: 10px;
+        }
+
+        .order-wrap button{
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+
+        <div class="goods-info">
+
+            <div class="img"></div>
+
+            <div class="info">
+                <h1> 꿀수박 </h1>
+                <h2>달달함 
+                   아삭함 
+                   품질보장 </h2>
+                <p>가격 30000원</p>
+            </div>
+        </div>
+
+        <div clss="order=wrap">
+
+            <div>주문자 이름 <input type="text"></div>
+            <div>수량
+                <select>
+                    <option value="">수량을 선택하세요</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                </select>
+            </div>
+            <div> 주소 <input type="text"></div>
+            <div> 전화번호 <input type="text"></div>
+            <div> <button>주문하기</button> </div>
+            
+        </div>
+
+   </div>
+</body>
+</html>
