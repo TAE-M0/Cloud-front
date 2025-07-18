@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <Style>
+        .gallery-wrap{
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+
+            margin: 0 auto;
+
+            position: relative;
+        }
+
+        .board{
+            width: 500px;
+            height: 500px;
+            /* background-color: aliceblue; */
+
+            background-image: url(https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTA2MDZfMjg2%2FMDAxNzQ5MTY1OTg2MTI2.Iq6IhYSR35DXL4_WTG8B_KEw9lGoNgrff0r1uvTLyyYg.5So1YKQmeNalEHReNCpFTo_lEO7o207GAilFm10Rd0kg.PNG%2F%25C0%25CC%25B9%25CC%25C1%25F6%25A3%25DF014.png&type=a340);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .prev{
+            width: 30px;
+            height: 60px;
+            background-color: blue;
+
+            position: absolute;
+            top: 220px;
+            left: -15px;
+        }
+
+        .next{
+            width: 30px;
+            height: 60px;
+            background-color: red;
+
+            position: absolute;
+            right: -15px;
+            top: 220px;
+        }
+
+
+
+    </Style>
+</head>
+<body>
+    
+
+    <!--갤러리만들기-->
+    <div class="gallery-wrap">
+
+        <!--이미지영역-->
+        <div class="board"></div>
+        <div class="prev"></div>
+        <div class="next"></div>
+    </div>
+</body>
+</html>
