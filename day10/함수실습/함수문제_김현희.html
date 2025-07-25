@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+//사각형 넓이 함수
+
+  function squre( su1, su2){
+    let sum = su1*su2;
+    return sum;
+  }
+
+  let result = squre(3,4);
+  alert(result); 
+
+
+//5. 합구하기
+ let su1 = prompt("숫자1");
+let su2 = prompt("숫자2");
+
+let  add1 = parseInt(su1); 
+let add2 = parseInt(su2); 
+
+function sum(add1,add2){
+    sum = add1+add2;
+    return sum;
+}
+
+let result = sum(add1,add2);
+alert(result); 
+
+
+//별구하기
+
+let cnt = prompt();
+
+function star(cnt){
+ let result=""; 
+ for(let i=1; i<= cnt; i++){
+   // document.write("*");
+   result = result + "*";
+  }
+
+  return result;
+}
+
+ document.write(star(cnt));
+
+
+ // 성인판단함수
+
+  let adult = prompt();
+
+     function age(adult){
+
+        if(adult>=20){
+            ad("성인입니다");
+        }else{
+            ad("성인이 아닙니다");
+        }
+     
+    return adult;
+
+     }
+
+  //let result = age();
+
+  alert(age(adult)); 
+
+//홀수판단
+ let num = prompt();
+
+ let cnt = parseInt(num); 
+
+     function 홀수판단(cnt){
+  
+        if(cnt%2 == 0){
+            alert("false");
+        } else{
+            alert("true");
+            
+        }
+
+     
+     }
+
+  alert(홀수판단()); 
+
+
+
+
+
+    </script>
+</body>
+</html>

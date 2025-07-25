@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+/*
+
+        let num = 5;
+        let result = num % 2;
+        if (result == 0) {
+            alert("짝수이군");
+        } else if (result == 1) {
+            alert("홀수이군");
+        }
+
+
+*/
+
+
+    function  홀수짝수출력하기( num){ 
+        //let num = 5;
+        let result = num % 2;
+        if (result == 0) {
+            alert("짝수이군");
+        } else if (result == 1) {
+            alert("홀수이군");
+        }
+    }
+
+
+        //
+
+        // 수를 매개변수 전달받아서   홀수 짝수 출력하는 함수 
+
+
+
+
+       // 홀수짝수출력하기(4);
+
+
+
+        //기능:
+        //입력 : 수
+        //출력 : 홀수판별값  boolean 
+
+        
+    function  홀수판별하기( num){ 
+       
+        let result = num % 2;
+        if (result == 0) {
+           return false;
+        } else if (result == 1) {
+            return  true;
+            
+        }
+    }
+
+    
+
+
+        // 수를 매개변수 전달받아서 홀수   판별하는 결과를 반환하는 함수 
+
+
+   let r =홀수판별하기(5);
+
+
+   if( r==true){
+     alert("홀수번 주민번호 가진 사람이 신청할 수 있다");
+   }
+       
+   
+
+   /*
+
+
+   
+        //기능:
+        //입력 : 수
+        //출력 : 홀수판별값  boolean 
+
+
+      function  홀수판별하기( num){ 
+        let result;
+       
+        let result = num % 2;
+        if (result == 0) {
+           result= false;
+        } else if (result == 1) {
+            result= true;
+            
+        }
+
+        return result;
+    }
+
+    
+
+   */
+
+    </script>
+</body>
+
+</html>

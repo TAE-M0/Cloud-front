@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 1번
+      function find_odd(num) {
+        if (num % 2 == 1) {
+          return true;
+        }
+        return false;
+      }
+
+      // 2번
+      function find_adult(num) {
+        if (num >= 20) {
+          return true;
+        }
+        return false;
+      }
+
+      // 3번
+      function ouput_gugu(num) {
+        for (let i = 1; i < 10; i++) {
+          document.write(num + " x " + i + " = " + num * i + "<br>");
+        }
+      }
+      ouput_gugu(8);
+
+      // 4번
+      function area_square(width, height) {
+        return width * height;
+      }
+      document.wrtte(area_square(5, 4));
+
+      // 5번
+      function add_num(num1, num2) {
+        return num1 + num2;
+      }
+      document.write(add_num(5, 3));
+
+      // 6번
+      function saving_rest(num1, num2) {
+        return num1 % num2;
+      }
+      document.write(saving_rest(5, 3));
+
+      // 7번
+      function ouput_stars(num1) {
+        for (let i = 0; i < num1; i++) {
+          document.write("*");
+        }
+      }
+      ouput_stars(5);
+    </script>
+  </body>
+</html>

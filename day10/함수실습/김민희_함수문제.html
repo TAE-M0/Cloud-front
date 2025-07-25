@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1.  홀수인지판단하는 함수 만들기  ( 수 -> 홀수이면  true, false  반환 )-->
+    <script>
+    {let input = prompt ("숫자를 입력해 주세요.\n홀수: True  짝수: False")
+
+        function odd(num){
+            if( num%2 == 1){
+                alert("True (홀수)");
+            }else{ 
+                alert("False (짝수)")
+            }
+        }
+    }
+
+        odd(parseInt(input));
+    </script>
+
+    <!--2.  성인판단하는 함수 만들기  (  나이  -> 20세 이상이면 true, false 반환 )-->
+    <script>
+    { let input = prompt("나이를 입력해주세요. \n성인(20세 이상): True 미성년자(20세 미만): False");
+
+        function age(num){
+            if(num >= 20){
+                alert("True (성인 입니다)");
+            }else{
+                alert("False (미성년자 입니다)");
+            }
+        }
+
+    }
+
+        age(parseInt(input));
+    </script>
+
+    <!--3.  구구단을 출력하는 함수 만들기  ( 단  -> 해당 단을 출력하기  )-->
+    <script>
+        let input = prompt("구구단을 출력합니다. 해당 단을 입력하세요");
+
+        function multiple(num){
+
+            document.write(`${num} 단 <br>`);
+            for(let i=1; i<=9; i++){
+                document.write(`${num} X ${i} = ${num * i} <br>`);
+            }
+        }
+
+        multiple(parseInt(input));
+    </script>
+
+    <!--4.  사각형의 넓이를 구하는 함수 만들기  (가로, 세로  -> 넓이를 반환하기  )-->
+    <script>
+        let width = prompt("사각형의 넓이를 구하기 위해 가로길이(cm) 를 입력하세요");
+        let height = prompt("사각형의 넓이를 구하기 위헤 세로길이(cm)을 입력하세요");
+
+        function area(){
+            document.write(`가로길이${width}cm 세로길이${height}cm 
+            <br>사각형의 넓이는 ${width * height}cm<sup>2</sup>입니다 `);
+        }
+
+        area(parseInt(width, height));
+    </script>
+
+    <!--5.  두 수를 매개변수로 받아서  합을 구하는 함수 만들기 ( 두 수  - > 합을 반환하기 )-->
+    <script>
+    {   let input1 = prompt("합을 구하기 위해 첫번쨰 숫자를 입력하세요");
+        let input2 = prompt("합을 구하기 위해 두번째 숫자를 입력하세요");
+        
+        function sum(a,b){
+            return parseInt(a)+parseInt(b);
+        }
+        
+        let result = sum(input1, input2);
+
+        document.write(`두 수의 합은 ${result} 입니다`);
+
+    }
+ 
+    </script>
+
+    <!-- 6.  두 수를 매개변수로 받아서  나머지를 구하는 함수 만들기  ( 두 수  -> 나머지를 반환하기)-->
+    <script>
+        let input1 = prompt("나머지를 구하기 위해 첫번쨰 숫자를 입력하세요");
+        let input2 = prompt("나머지를 구하기 위해 두번째 숫자를 입력하세요");
+
+        input1 = Number(input1);
+        input2 = Number(input2);
+        
+        let maxnum, minnum;
+
+        if (input1 >= input2){
+            maxnum = input1;
+            minnum = input2;
+        }else {
+            maxnum = input2;
+            minnum = input1;
+        }
+
+        function remainder(a, b){ 
+            return a % b ;
+        }
+
+        document.write(`나머지는  ${remainder(maxnum, minnum)}입니다`);
+    </script>
+
+    <!--7.  입력된 수만큼 별찍기  (  수   -> 수만큼 별찍기  )-->
+    <script>
+        let star = prompt("그릴 별의 개수를 입력하세요");
+
+        star = parseInt(star);
+
+        function draw (){
+            for(let a=0; a<=star; a++){
+                document.write(`*`);
+            }
+        }
+
+        draw();
+
+    </script>
+</body>
+</html>
