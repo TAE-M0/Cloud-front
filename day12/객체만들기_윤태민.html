@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        let icecream = {
+
+            name: "빠삐코",
+
+            flavor: "초코",
+
+            price: 1000,
+
+            manufacturing: "롯데",
+
+            weight: "130ml",
+
+            Icecream: function () {
+                alert(this.name + "입니다");
+                alert(`${this.name}는 ${this.flavor}맛이고 ${this.price}원입니다`);
+            }
+
+        };
+
+        console.log(icecream.name);
+        console.log(icecream["flavor"]);
+        console.log(icecream.price);
+        console.log(icecream["manufacturing"]);
+        console.log(icecream.weight);
+
+        icecream.Icecream();
+
+
+        
+
+     
+
+    </script>
+</body>
+
+</html>
