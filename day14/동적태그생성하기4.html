@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function addAImg(){
+
+            //
+            const imgTag = document.createElement("img");
+            imgTag.src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDEwMDVfMTY5%2FMDAxNzI4MDg2NjM3MDMx.8zh-vrvC0uUL2tFWVnP9Fz2QZDLVtibYaBTLQlHzCcsg.lvDmp4NDfk3sRW1YSwMy7jiPMbO0s4-vpigm_eYusLsg.PNG%2F%25B4%25EB%25C1%25F6_1.png&type=a340";
+            imgTag.alt = "이미지";
+            imgTag.style.width = "100px";
+
+            //
+            const wrap = document.getElementById("wrap");
+
+            //
+            wrap. appendChild(imgTag);
+        }
+    </script>
+</head>
+<body>
+    
+    <button onclick="addAImg()"> 이미지 태그 생성</button>
+
+    <!--부모영역으로 정하기-->
+    <div id="wrap"></div>
+
+</body>
+</html>

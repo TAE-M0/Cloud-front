@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .aa {
+            width: 650px;
+            height: 50px;
+            border: 1px solid black;
+            text-align: center;
+            margin: 0 auto;
+            font-size: 25px;
+        }
+
+        .bb {
+            width: 800px;
+            height: 200px;
+            border: 1px solid black;
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+
+        .bb img {
+            width: 200px;
+            height: 160px;
+        }
+
+        .bb button{
+            width: 70px;
+            height: 30px;
+            margin-left: 720px;
+           
+        }
+
+    </style>
+
+    <script>
+
+        function abab(cc){
+
+            
+
+            const bb = cc.closest(".bb");
+
+             console.log(bb);
+
+            const content = bb.querySelector(".ab");
+            console.log(content);
+            //alert(content.src);
+           const span = bb.querySelector("span");
+           span.style.display="inline-block";
+
+        }
+
+
+       
+    </script>
+</head>
+
+<body>
+
+    <div class="aa"><b>closest를 사용하여 버튼 클릭시 보물의 내용 가져오기</b></div>
+
+    <div class="bb">
+
+        <div><img src="https://search.pstatic.net/sunny/?src=http%3A%2F%2Fstatic9.depositphotos.com%2F1000792%2F1109%2Fv%2F450%2Fdepositphotos_11097776-stock-illustration-treasure-chest.jpg&type=a340" alt="이미지" class="ab">
+        
+            <span  style="display: none;">금100돈</span>
+        </div>
+     
+
+        <button onclick="abab(this)">클릭</button>
+
+    </div>
+
+    <div class="bb">
+
+        <div><img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTA3MDdfMTY3%2FMDAxNzUxODczNDk0NDA5.e6Go5sw_LaU4qiyf5KMJWCSLjNnIeZVddt2AseSXy5kg.h0ULQ3YTROtISZYo0KewOPA4WdFGPANvkjZuAoP0nMgg.JPEG%2FIMG%25A3%25DF4947.jpg&type=a340" alt="이미지" class="ab"></div>
+
+        <button onclick="abab(this)">클릭</button>
+    </div>
+
+
+</body>
+
+</html>

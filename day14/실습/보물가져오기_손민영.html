@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    h2 {
+      text-align: center;
+    }
+    .jewel_wrap {
+      width: 600px;
+      border: 1px solid black;
+      display: flex;
+      position: relative;
+      margin: 0 auto;
+    }
+
+    .jewel_wrap button {
+      width: 70px;
+      height: 30px;
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+    }
+
+    .jewel {
+      width: 200px;
+      height: 100px;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      text-align: center;
+      line-height: 100px;
+    }
+
+    .gold {
+      background-image: url("./gold.png");
+    }
+
+    .diamond {
+      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVHyf5PONyNdqQwv81sjCmUcbGEjsJBmXUHo2WAq-_aADd5LOUuKj8U6oyJR0EW6Q9k6I&usqp=CAU");
+    }
+  </style>
+
+  <script>
+    function getJewel(obj) {
+      const div = obj.closest(".jewel_wrap");
+      const span = div.querySelector("span");
+      alert(span.textContent);
+      span.style.display = "block";
+    }
+  </script>
+</head>
+<body>
+  <h2>closest를 사용하여 버튼 클릭시 보물의 내용 가져오기</h2>
+  <div class="jewel_wrap">
+    <div class="jewel gold"><span style="display: none;">금 100돈</span></div>
+    <button onclick="getJewel(this)">클릭</button>
+  </div>
+  <div class="jewel_wrap">
+    <div class="jewel diamond"><span style="display: none;">다이아몬드 10캐럿</span></div>
+    <button onclick="getJewel(this)">클릭</button>
+  </div>
+</body>
+</html>
