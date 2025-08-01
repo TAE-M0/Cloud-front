@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .gallery_image {
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .gallery_image p {
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .aa {
+            width: 500px;
+            height: 475px;
+            /* border: 1px solid blue; */
+            margin: 0 auto;
+            background-image: url("./이미지/과일.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+
+        .lf {
+            width: 30px;
+            height: 30px;
+            border: 1px solid #ccc;
+            border-radius: 30px;
+            text-align: center;
+            background-color: #ccc;
+            position: absolute;
+            top: 10%;
+            transform: translateY(-60%);
+            left: 5px;
+            font-size: 19px;
+        }
+
+        .rg {
+            width: 30px;
+            height: 30px;
+            border: 1px solid #ccc;
+            border-radius: 30px;
+            text-align: center;
+            background-color: #ccc;
+            position: absolute;
+            top: 10%;
+            transform: translateY(-60%);
+            left: 45px;
+            font-size: 19px;
+        }
+    </style>
+
+    <script>
+
+        let imgNames = ["./이미지/과일.jpg",
+                        "./이미지/딸기.jpg",
+                        "./이미지/망고.jpg",
+                        "./이미지/복숭아.jpg",
+                        "./이미지/블루베리.jpg",
+                        "./이미지/수박.jpg",
+                        "./이미지/체리.jpg",
+                        "./이미지/키위.jpg"
+        ];
+
+        let index = 0;
+
+        function lf() {
+            //alert("asd");
+            index = index + 1;
+
+            if (index >= imgNames.length) {
+                index = 0;
+            }
+
+            const gallery = document.querySelector(".aa");
+            gallery.style.backgroundImage = "url(" + imgNames[index] + ")";
+            gallery.style.backgroundPosition = "center";
+            gallery.style.backgroundSize = "cover";
+
+        }
+
+        function rg() {
+            //alert("asd");
+            index = index - 1;
+
+            if (index < 0) {
+                index = imgNames.length - 1;
+            }
+
+            const gallery = document.querySelector(".aa");
+            gallery.style.backgroundImage = "url(" + imgNames[index] + ")";
+            gallery.style.backgroundPosition = "center";
+            gallery.style.backgroundSize = "cover";
+
+        }
+    </script>
+</head>
+
+<body>
+
+
+    <!--이미지 갤러리-->
+    <div class="gallery_image">
+        <p style="color:blueviolet"><b> 과 일 파 티</b> </p>
+
+        <!--이미지-->
+        <div class="aa"></div>
+
+        <!--버튼-->
+        <div class="lf" onclick="lf()"> <span> <b>
+                    < </b> </span> </div>
+
+        <div class="rg" onclick="rg()"> <span> <b> > </b> </span> </div>
+
+    </div>
+
+</body>
+
+</html>
