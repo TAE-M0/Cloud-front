@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .item-wrap{
+            width: 300px;
+            height: 200px;
+            border: 1px solid black;
+
+            overflow: hidden;
+        }
+
+        .item{
+            width: 300px;
+            height: 200px;
+            border: 1px solid red;
+
+            background-image: url("https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA4MjdfNjUg%2FMDAxNzI0NzU0MjcyOTMw.qvlBE5iofZLnROylibfEfNr5Y8jtOrJteEzt3MIjdT4g.xEdhVZWkvQ_yjkXiU5g5kmvuBpjgHX7GnSmf7kdU3Qsg.PNG%2Fpngtree-cartoon-illustration-of-food-dishes-and-objects-group-png-image_6346.png&type=a340");
+            background-position: center;
+            background-size: cover;
+
+            transition: 1s; /*실행시간*/
+        }
+
+        .item:hover{
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+
+        <h2> scale이용해서 커지는 이미지 만들기</h2>
+
+        <div class="item-wrap">
+        <!--div 배경에다가 이미지-->
+        <div class="item"></div>
+    </div>
+</body>
+</html>
