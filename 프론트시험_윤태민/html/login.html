@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        header {
+            height: 100px;
+            background-color: rgb(245, 248, 248);
+            position: relative;
+        }
+
+        .title {
+            position: absolute;
+            left: 10px;
+            top: 20px;
+        }
+
+        .search input {
+            position: absolute;
+            height: 40px;
+            right: 10px;
+            bottom: 20px;
+            padding: 0px;
+            border: none;
+            width: 210px;
+
+        }
+
+        .search_img {
+            position: absolute;
+            right: 10px;
+            bottom: 20px;
+            width: 40px;
+            height: 40px;
+
+            background-image: url("../images/images/images/검색.png");
+            background-position: center;
+            background-size: cover;
+        }
+
+        nav {
+            height: 40px;
+            padding: 20px;
+            background-color: rgb(232, 243, 243);
+            display: flex;
+            justify-content: right;
+
+
+        }
+
+        .a1 {
+            width: 70px;
+            height: 25px;
+            border-right: 0.5px solid black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .a2 {
+            width: 70px;
+            height: 25px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        section {
+            height: 600px;
+            margin-top: 50px;
+
+            justify-items: center;
+        }
+
+        .log_wrap {
+            width: 400px;
+            height: 100%;
+            padding: 20px;
+            border: 0.5px solid rgb(234, 222, 222);
+            justify-items: center;
+            
+        }
+
+        .log_img {
+            width: 300px;
+            height: 300px;
+            background-image: url("../images/images/images/login_logo.jpg");
+            background-position: center;
+            background-size: cover;
+            
+        }
+
+        .log_wrap input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 3px;
+            box-sizing: border-box;
+        }
+
+        .log_wrap button {
+            width: 100%;
+            padding: 10px;
+            background-color: silver;
+            border: none;
+            margin-top: 10px;
+        }
+
+        .log_wrap form{
+            justify-items: center;
+        }
+
+        footer {
+            padding: 20px;
+            background-color: rgb(233, 239, 239);
+            border-bottom: 3px solid black;
+            display: flex;
+        }
+
+        .footer_1 {
+            width: 33%;
+
+            text-align: center;
+        }
+    </style>
+
+    <script>
+        
+        function check() {
+            const as = document.as;
+            let id = as.id;
+            let pw = as.pw;
+            if (id.value == "") {
+                alert("아이디를 입력하세요");
+                id.focus();
+            } if (pw.value == "") {
+                alert("비밀번호를 입력하세요");
+                pw.focus();
+            }else{
+                alert("로그인 성공");
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="title">
+            <img src="../images/images/images/logo.png" alt="타이틀">
+        </div>
+
+        <div class="search">
+            <input type="text">
+            <div class="search_img"></div>
+        </div>
+
+    </header>
+
+    <nav>
+        <a href="http://127.0.0.1:5500/html/login.html" class="a1">로그인</a>
+        <a href="http://127.0.0.1:5500/html/index.html" class="a2">홈으로</a>
+    </nav>
+
+
+    <section>
+
+        <div class="log_wrap">
+
+            <form  name="as" method="post">
+            <div class="log_img"></div>
+            <input type="text" placeholder="아이디" name="id">
+            <input type="text" placeholder="비번" name="pw">
+            <button onclick="check()">로그인</button> 
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class=footer_1>
+            <img src="../images/images/images/footer_acorn.png" alt="이미지">
+        </div>
+        <div class=footer_1> 에이콘ACADEMY(홍대) </div>
+        <div class=footer_1> COPYRIGHT(C) HBILAB ALL RIGHTS RESERVED.</div>
+    </footer>
+
+</body>
+
+</html>
